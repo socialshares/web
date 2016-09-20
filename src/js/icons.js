@@ -1,0 +1,11 @@
+import '../icons/download.svg';
+import '../icons/code.svg';
+import '../icons/github.svg';
+import '../icons/chrome.svg';
+import '../icons/firefox.svg';
+import '../icons/opera.svg';
+import '../icons/safari.svg';
+import '../icons/ie.svg';
+import '../icons/edge.svg';
+import '../icons/android.svg';
+import '../icons/ios.svg';

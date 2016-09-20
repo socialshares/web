@@ -1,0 +1,29 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #ccc;
+
+  & thead {
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ccc;
+  }
+
+  & td,
+  & th {
+    border-left: 1px solid #ccc;
+    border-width: 0 0 0 1px;
+    overflow: visible;
+    padding: 10px 15px;
+  }
+
+  & td {
+    border-bottom: 1px solid #ccc;
+  }
+
+  & tbody > tr:last-child > td {
+    border-bottom-width: 0;
+  }
+}

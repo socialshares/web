@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>socialshares</title>
+
+  <meta name="description" content="Responsive, secure, and fast share buttons." />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+  <header class="masthead">
+    <div class="masthead-logo">
+      <img
+        src="./logo.svg"
+        alt="socialshares logo"
+        width="500"
+        height="63"
+      />
+    </div>
+
+    <div class="masthead-description">
+      <p class="masthead-description-tagline">Responsive, secure, and fast share buttons.</p>
+      <p class="masthead-description-details">Loading multiple scripts to embed a few share buttons on your site? Why not just load one to improve performance and keep your user's data private.</p>
+    </div>
+
+    <div class="masthead-share">
+      <div
+        class="socialshares"
+        data-url="https://socialshar.es/"
+        data-text="Responsive, secure, and fast share buttons."
+      >
+        <div class="socialshares-twitter" data-via="NinjalityDesign"></div>
+        <div class="socialshares-facebook"></div>
+        <div class="socialshares-googleplus"></div>
+        <div class="socialshares-more"></div>
+      </div>
+    </div>
+
+    <div class="masthead-actions">
+      <a class="button button-primary masthead-actions-button"
+         href="#installation"
+         data-scroll
+      >
+        <svg class="icon"><use xlink:href="#icon-download"></use></svg>
+        Install socialshares
+      </a>
+
+      <a class="button button-default masthead-actions-button"
+         href="#usage"
+         data-scroll
+      >
+        <svg class="icon"><use xlink:href="#icon-code"></use></svg>
+        Code Usage
+      </a>
+
+      <a class="button button-default masthead-actions-button"
+         href="https://github.com/socialshares/buttons"
+      >
+        <svg class="icon"><use xlink:href="#icon-github"></use></svg>
+        GitHub Repo
+      </a>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="installation" class="docgroup">
+      <h2>Installation</h2>
+      <p>
+        Just pick how you want to grab socialshares and reference the JavaScript file.<br />
+        All CSS and SVG is inlined.
+      </p>
+      <div class="fr-tabs js-fr-tabs has-spacing">
+        <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-npm" href="#panel-npm">
+              npm
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-bower" href="#panel-bower">
+              Bower
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-cdn" href="#panel-cdn">
+              CDN
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-cdn" href="#panel-download">
+              Download
+            </a>
+          </li>
+        </ul>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-npm">
+          <p>Available via <a href="https://www.npmjs.com/">npm</a>.</p>
+          <pre><code class="bash">npm install socialshares --save</code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-bower">
+          <p>Available via <a href="https://bower.io/">Bower</a>.</p>
+          <pre><code class="bash">bower install socialshares</code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-cdn">
+          <p>Available via <a href="https://unpkg.com/">unpkg</a>.</p>
+          <pre><code class="html">&lt;script src="https://unpkg.com/socialshares/dist/socialshares.min.js">&lt;script></code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-download">
+          <p><a href="https://github.com/socialshares/buttons/archive/master.zip">Download compressed file</a> and reference the JavaScript.</p>
+          <pre><code class="html">&lt;script src="dist/socialshares.min.js">&lt;script></code></pre>
+        </section>
+      </div>
+    </section>
+
+    <section id="usage" class="docgroup">
+      <h2>Usage</h2>
+      <p>The following markup displays all available buttons.</p>
+      <div class="fr-tabs js-fr-tabs has-spacing">
+        <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-usage" href="#panel-usage">
+              Code
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-usage-demo" href="#panel-usage-demo">
+              Demo
+            </a>
+          </li>
+        </ul>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-usage">
+          <pre><code class="html">&lt;div class="socialshares">
+  &lt;div class="socialshares-twitter">&lt;/div>
+  &lt;div class="socialshares-facebook">&lt;/div>
+  &lt;div class="socialshares-googleplus">&lt;/div>
+  &lt;div class="socialshares-reddit">&lt;/div>
+  &lt;div class="socialshares-tumblr">&lt;/div>
+  &lt;div class="socialshares-linkedin">&lt;/div>
+  &lt;div class="socialshares-pinterest">&lt;/div>
+  &lt;div class="socialshares-slack">&lt;/div>
+  &lt;div class="socialshares-vk">&lt;/div>
+  &lt;div class="socialshares-email">&lt;/div>
+  &lt;div class="socialshares-more">&lt;/div>
+&lt;/div></code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-usage-demo">
+          <div class="socialshares">
+            <div class="socialshares-twitter"></div>
+            <div class="socialshares-facebook"></div>
+            <div class="socialshares-googleplus"></div>
+            <div class="socialshares-reddit"></div>
+            <div class="socialshares-tumblr"></div>
+            <div class="socialshares-linkedin"></div>
+            <div class="socialshares-pinterest"></div>
+            <div class="socialshares-slack"></div>
+            <div class="socialshares-vk"></div>
+            <div class="socialshares-email"></div>
+            <div class="socialshares-more"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="variants" class="docgroup">
+      <h2>Variants</h2>
+      <p>There are multiple themes and sizes that you can use with <code>data-theme</code>, <code>data-size</code>, and <code>data-icononly</code> attributes.</p>
+      <div class="fr-tabs js-fr-tabs has-spacing">
+        <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-variants" href="#panel-variants">
+              Code
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-variants-demo" href="#panel-variants-demo">
+              Demo
+            </a>
+          </li>
+        </ul>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-variants">
+          <pre><code class="html">&lt;!-- Light-monotone theme (default light theme with gray icons) -->
+&lt;div class="socialshares" data-theme="light-monotone">
+  &lt;div class="socialshares-twitter">&lt;/div>
+  &lt;div class="socialshares-facebook">&lt;/div>
+  &lt;!-- Other buttons here... -->
+&lt;/div>
+
+&lt;!-- Dark theme -->
+&lt;div class="socialshares" data-theme="dark">
+  &lt;div class="socialshares-twitter">&lt;/div>
+  &lt;div class="socialshares-facebook">&lt;/div>
+  &lt;!-- Other buttons here... -->
+&lt;/div>
+
+&lt;!-- Brand theme -->
+&lt;div class="socialshares" data-theme="brand">
+  &lt;div class="socialshares-twitter">&lt;/div>
+  &lt;div class="socialshares-facebook">&lt;/div>
+  &lt;!-- Other buttons here... -->
+&lt;/div>
+
+&lt;!-- Only display icons -->
+&lt;div class="socialshares" data-icononly>
+  &lt;div class="socialshares-twitter">&lt;/div>
+  &lt;div class="socialshares-facebook">&lt;/div>
+  &lt;!-- Other buttons here... -->
+&lt;/div></code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-variants-demo">
+          <!-- Light-monotone theme (default light theme with gray icons) -->
+          <div class="socialshares" data-theme="light-monotone">
+            <div class="socialshares-twitter"></div>
+            <div class="socialshares-facebook"></div>
+            <div class="socialshares-googleplus"></div>
+            <div class="socialshares-reddit"></div>
+            <div class="socialshares-tumblr"></div>
+            <div class="socialshares-linkedin"></div>
+            <div class="socialshares-pinterest"></div>
+            <div class="socialshares-slack"></div>
+            <div class="socialshares-vk"></div>
+            <div class="socialshares-email"></div>
+            <div class="socialshares-more"></div>
+          </div>
+
+          <br /><br />
+
+          <!-- Dark theme -->
+          <div class="socialshares" data-theme="dark">
+            <div class="socialshares-twitter"></div>
+            <div class="socialshares-facebook"></div>
+            <div class="socialshares-googleplus"></div>
+            <div class="socialshares-reddit"></div>
+            <div class="socialshares-tumblr"></div>
+            <div class="socialshares-linkedin"></div>
+            <div class="socialshares-pinterest"></div>
+            <div class="socialshares-slack"></div>
+            <div class="socialshares-vk"></div>
+            <div class="socialshares-email"></div>
+            <div class="socialshares-more"></div>
+          </div>
+
+          <br /><br />
+
+          <!-- Brand theme -->
+          <div class="socialshares" data-theme="brand">
+            <div class="socialshares-twitter"></div>
+            <div class="socialshares-facebook"></div>
+            <div class="socialshares-googleplus"></div>
+            <div class="socialshares-reddit"></div>
+            <div class="socialshares-tumblr"></div>
+            <div class="socialshares-linkedin"></div>
+            <div class="socialshares-pinterest"></div>
+            <div class="socialshares-slack"></div>
+            <div class="socialshares-vk"></div>
+            <div class="socialshares-email"></div>
+            <div class="socialshares-more"></div>
+          </div>
+
+          <br /><br />
+
+          <!-- Only display icons -->
+          <div class="socialshares" data-icononly>
+            <div class="socialshares-twitter"></div>
+            <div class="socialshares-facebook"></div>
+            <div class="socialshares-googleplus"></div>
+            <div class="socialshares-reddit"></div>
+            <div class="socialshares-tumblr"></div>
+            <div class="socialshares-linkedin"></div>
+            <div class="socialshares-pinterest"></div>
+            <div class="socialshares-slack"></div>
+            <div class="socialshares-vk"></div>
+            <div class="socialshares-email"></div>
+            <div class="socialshares-more"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="configuration" class="docgroup">
+      <h2>Configuration</h2>
+      <p>You can configure socialshares with data attributes.</p>
+      <div class="fr-tabs js-fr-tabs has-spacing">
+        <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-configuration" href="#panel-configuration">
+              Code
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-configuration-demo" href="#panel-configuration-demo">
+              Demo
+            </a>
+          </li>
+        </ul>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-configuration">
+          <pre><code class="html">&lt!-- Container Attributes -->
+&lt;div
+  class="socialshares"
+  data-url="http://example.com/"
+  data-title="Example title."
+  data-text="Example description."
+  data-size="large"
+  data-theme="brand"
+>
+  &lt!-- Button Attributes -->
+  &lt;div class="socialshares-twitter" data-label="Share on Twitter" data-via="MyTwitterHandle">&lt;/div>
+  &lt;div class="socialshares-facebook" data-label="Share on Facebook">&lt;/div>
+  &lt;div class="socialshares-googleplus" data-label="Share on Google+">&lt;/div>
+&lt;/div></code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-configuration-demo">
+          <div
+            class="socialshares"
+            data-url="http://example.com/"
+            data-title="Example title."
+            data-text="Example description."
+            data-size="large"
+            data-theme="brand"
+          >
+            <div class="socialshares-twitter" data-label="Share on Twitter" data-via="MyTwitterHandle"></div>
+            <div class="socialshares-facebook" data-label="Share on Facebook"></div>
+            <div class="socialshares-googleplus" data-label="Share on Google+"></div>
+          </div>
+        </section>
+      </div>
+      <h3>Container Attributes</h3>
+      <table class="table has-spacing">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Values</th>
+            <th>Default</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>data-url</td>
+            <td>any valid url</td>
+            <td>current page url</td>
+          </tr>
+          <tr>
+            <td>data-title</td>
+            <td>any string</td>
+            <td>current page title</td>
+          </tr>
+          <tr>
+            <td>data-text</td>
+            <td>any string</td>
+            <td>current page meta description</td>
+          </tr>
+          <tr>
+            <td>data-size</td>
+            <td>small, medium, large</td>
+            <td>medium</td>
+          </tr>
+          <tr>
+            <td>data-theme</td>
+            <td>light, light-monotone, dark, brand</td>
+            <td>light</td>
+          </tr>
+          <tr>
+            <td>data-icononly</td>
+            <td>none, boolean attribute</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>data-noresponsive</td>
+            <td>none, boolean attribute</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Button Attributes</h3>
+      <table class="table has-spacing">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Values</th>
+            <th>Default</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>data-label</td>
+            <td>any string</td>
+            <td>unique to button</td>
+          </tr>
+          <tr>
+            <td>data-via</td>
+            <td>any string</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>data-icononly</td>
+            <td>none, boolean attribute</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="configuration-javascript">You can also configure socialshares with JavaScript.</p>
+      <pre class="bordered"><code class="javascript">socialshares.configure({
+  url: 'Your page URL',
+  title: 'Your page title',
+  text: 'Your page description',
+  size: 'medium',
+  theme: 'light',
+  icononly: false,
+  responsive: true,
+  dialog: {
+    width: 650,
+    height: 450,
+  },
+})
+
+socialshares.mount() // render with new config</code></pre>
+    </section>
+
+    <section id="methods" class="docgroup">
+      <h2>Methods</h2>
+      <p>The <code>socialshares</code> JavaScript object offers multiple methods.</p>
+
+      <h3><code>socialshares.configure()</code></h3>
+      <p>Configures buttons. Example in <a href="#configuration-javascript" data-scroll>configuration section</a>.</p>
+
+      <h3><code>socialshares.mount()</code></h3>
+      <p>Renders buttons. Use it for single-page apps, or pass in a selector to mount to different elements. Automatically detects domready.</p>
+      <pre class="bordered has-spacing"><code class="javascript">// re-render buttons
+socialshares.mount()
+
+// mount to different elements
+socialshares.mount('.your-custom-selector')</code></pre>
+
+      <h3><code>socialshares.unmount()</code></h3>
+      <p>Destroys buttons. This will remove all socialshares-related DOM and event listeners.</p>
+      <pre class="bordered has-spacing"><code class="javascript">// destroy default-mounted instance
+socialshares.unmount()
+
+// destroy custom-mounted instances
+socialshares.unmount('.your-custom-selector')</code></pre>
+
+      <h3><code>socialshares.removeStyles()</code></h3>
+      <p>Remove injected CSS.</p>
+      <pre class="bordered"><code class="javascript">socialshares.removeStyles()</code></pre>
+    </section>
+
+    <section id="optimization" class="docgroup">
+      <h2>Optimization</h2>
+      <p>You can gain a slight performance boost by only including the icons that you use. You will want to do this in a <a href="http://webpack.github.io/">Webpack</a> or <a href="http://browserify.org/">Browserify</a> environment after <a href="#installation" data-scroll>installing via npm</a>.</p>
+      <div class="fr-tabs js-fr-tabs has-spacing">
+        <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-optimization-es5" href="#panel-optimization-es5">
+              ES5
+            </a>
+          </li>
+          <li class="fr-tabs__tablist-item">
+            <a class="fr-tabs__tab" id="tab-optimization-es6" href="#panel-optimization-es6">
+              ES2015
+            </a>
+          </li>
+        </ul>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-optimization-es5">
+          <pre><code class="javascript">var socialshares = require('socialshares/dist/socialshares.noicons')
+var twitterIcon = require('socialshares/dist/icons/twitter')
+var facebookIcon = require('socialshares/dist/icons/facebook')
+
+socialshares.configure({
+  icons: {
+    twitter: twitterIcon,
+    facebook: facebookIcon,
+    // others: googleplus, linkedin, pinterest, reddit, slack, tumblr, vk, more
+  },
+})
+
+socialshares.mount() // render with new config</code></pre>
+        </section>
+        <section class="fr-tabs__panel js-fr-tabs__panel" id="panel-optimization-es6">
+          <pre><code class="javascript">import socialshares from 'socialshares/dist/socialshares.noicons'
+import twitter from 'socialshares/dist/icons/twitter'
+import facebook from 'socialshares/dist/icons/facebook'
+
+socialshares.configure({
+  icons: {
+    twitter,
+    facebook,
+    // others: googleplus, linkedin, pinterest, reddit, slack, tumblr, vk, more
+  }
+})
+
+socialshares.mount() // render with new config</code></pre>
+        </section>
+      </div>
+      <p>If you're using Webpack 2 or <a href="http://rollupjs.org/">Rollup</a>, you can take advantage of tree-shaking.</p>
+      <pre class="bordered has-spacing"><code class="javascript">import socialshares from 'socialshares/dist/socialshares.noicons'
+import {twitter, facebook} from 'socialshares/dist/icons'
+
+socialshares.configure({
+  icons: {twitter, facebook}
+})
+
+socialshares.mount()</code></pre>
+    </section>
+
+    <section id="compatibility" class="docgroup">
+      <h2>Compatibility</h2>
+      <p>We try to support all modern browsers. If you notice something broken, please <a href="https://github.com/socialshares/buttons/issues/new">open an issue</a>.</p>
+      <div class="compatibility">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-chrome"></use></svg></div>
+                <div class="compatibility-label">Chrome</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-firefox"></use></svg></div>
+                <div class="compatibility-label">Firefox</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-opera"></use></svg></div>
+                <div class="compatibility-label">Opera</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-safari"></use></svg></div>
+                <div class="compatibility-label">Safari</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-ie"></use></svg></div>
+                <div class="compatibility-label">IE</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-edge"></use></svg></div>
+                <div class="compatibility-label">Edge</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-android"></use></svg></div>
+                <div class="compatibility-label">Chrome for Android</div>
+              </th>
+              <th>
+                <div class="compatibility-icon"><svg class="icon"><use xlink:href="#icon-ios"></use></svg></div>
+                <div class="compatibility-label">iOS Safari</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Yes</th>
+              <th>Yes</th>
+              <th>Yes</th>
+              <th>Yes</th>
+              <th>10+</th>
+              <th>Yes</th>
+              <th>Yes</th>
+              <th>Yes</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="faq" class="docgroup">
+      <h2>FAQ</h2>
+      <p>You probably have some questions about this project, here are a few common ones.</p>
+      <h3>How does socialshares help with performance and privacy?</h3>
+      <p>Embedding third-party scripts from Twitter, Facebook, and other social media means that your site will have to make multiple HTTP requests to external domains, which is bad for performance. You are also giving away your visitors' browsing data by having these scripts on your site. With socialshares, you load custom buttons from your own site, which means you get full control over performance and privacy. You also get responsive and consistent-looking buttons with little effort.</p>
+      <h3>Why is the CSS and SVG included with the JavaScript?</h3>
+      <p>It was decided that v2 would be easier to setup, and keeping everything contained in a single JS file is the simplest solution. We also went with SVG over font icons for the same reason. This does mean that the buttons will not show for JS-disabled users, but sharing is typically not a core feature and you can provide a fallback with the <code>&lt;noscript></code> tag if needed.</p>
+      <h3>Where can I find previous versions?</h3>
+      <p>Version 1 is no longer maintained but the site can be found at <a href="https://v1.socialshar.es/">v1.socialshar.es</a> and at the <a href="https://github.com/socialshares/buttons/tree/v1.0.5">v1.0.5 tag</a> on the repo.</p>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="github-buttons">
+      <iframe src="https://ghbtns.com/github-btn.html?user=socialshares&repo=buttons&type=star&count=true&size=large" frameborder="0" scrolling="0" width="120" height="30"></iframe>
+      <iframe src="https://ghbtns.com/github-btn.html?user=socialshares&repo=buttons&type=fork&count=true&size=large" frameborder="0" scrolling="0" width="120" height="30"></iframe>
+    </div>
+    <p class="attributions">Created by the ninjas at <a href="https://ninjality.com/">Ninjality</a>, open sourced on <a href="https://github.com/socialshares/buttons">GitHub</a>, and licensed under <a href="https://github.com/socialshares/buttons/blob/master/LICENSE">MIT</a>.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad()</script>
+
+</body>
+</html>

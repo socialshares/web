@@ -1,0 +1,50 @@
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: lowercase;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+
+  & .icon {
+    margin-right: 3px;
+  }
+
+  &-default {
+    color: #444;
+    background: #ddd;
+    border: 1px solid #ccc;
+
+    &:hover,
+    &:focus {
+      color: #444;
+      background: #bbb;
+      border: 1px solid #aaa;
+      text-decoration: none;
+    }
+
+    & .icon {
+      fill: #444;
+    }
+  }
+
+  &-primary {
+    color: #fff;
+    background: var(--brand-primary);
+    border: 1px solid color(var(--brand-primary) blackness(+5%));
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background: color(var(--brand-primary) blackness(+15%));
+      border: 1px solid color(var(--brand-primary) blackness(+20%));
+      text-decoration: none;
+    }
+
+    & .icon {
+      fill: #fff;
+    }
+  }
+}
