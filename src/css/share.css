@@ -1,0 +1,90 @@
+@import 'ress';
+
+:root {
+  /* Brand Colors */
+  --twitter: #55acee;
+  --facebook: #3b5998;
+  --googleplus: #dc4e41;
+  --reddit: #ff4500;
+  --tumblr: #36465d;
+  --linkedin: #0077b5;
+  --pinterest: #bd081c;
+  --slack: #56b68b;
+  --vk: #6383a8;
+
+  font-size: 16px;
+}
+
+body {
+  color: #333;
+  background: #dfdfdf;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    display: flex;
+    flex: 0 1 100%;
+    align-content: center;
+    justify-content: center;
+    width: 25%;
+
+    @media (width >= 430px) {
+      flex: 0 1 50%;
+    }
+
+    @media (width >= 680px) {
+      flex: 0 1 33.333333%;
+    }
+  }
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+    transition: all 0.2s ease;
+  }
+
+  & svg {
+    fill: #fff;
+  }
+
+  @each $service in twitter, facebook, googleplus, reddit, tumblr, linkedin, pinterest, slack, vk {
+    &-$(service) a {
+      background: var(--$(service));
+
+      &:hover,
+      &:focus {
+        background: color(var(--$(service)) blackness(+20%));
+      }
+
+      &:active {
+        background: color(var(--$(service)) blackness(+40%));
+      }
+    }
+  }
+
+  &-email a {
+    background: #444;
+
+    &:hover,
+    &:focus {
+      background: color(#444 blackness(+20%));
+    }
+
+    &:active {
+      background: color(#444 blackness(+40%));
+    }
+  }
+}

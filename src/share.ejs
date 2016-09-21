@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Share</title>
+
+  <meta name="robots" content="noindex" />
+
+  <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <% if (htmlWebpackPlugin.files.css[css] === 'share.css') { %>
+      <link href="./<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet" />
+    <% } %>
+  <% } %>
+
+  <script src="./<%= htmlWebpackPlugin.files.chunks['share'].entry %>"></script>
+
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <noscript>Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> in your browser.</noscript>
+  <!--[if lte IE 9]>Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a>.<![endif]-->
+
+</body>
+</html>

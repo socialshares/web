@@ -8,8 +8,9 @@
     "dev": "webpack-dev-server --content-base ./dist --port 3100 --hot --inline --progress --colors",
     "build": "webpack",
     "build-prod": "NODE_ENV=production webpack -p",
-    "predeploy": "npm run build-prod",
-    "deploy": "surge --project ./dist"
+    "predeploy": "npm run svgo && npm run build-prod",
+    "deploy": "surge --project ./dist",
+    "svgo": "svgo -f ./src/icons"
   },
   "repository": {
     "type": "git",
@@ -29,16 +30,19 @@
     "browser-sync-webpack-plugin": "^1.1.2",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
+    "ejs-loader": "^0.3.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.22.0",
     "inject-webpack-plugin": "^0.3.0",
     "postcss-cssnext": "^2.7.0",
+    "postcss-each": "^0.9.3",
     "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "surge": "^0.18.0",
     "svg-sprite-loader": "0.0.26",
+    "svgo": "^0.7.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
@@ -48,6 +52,7 @@
     "fontfaceobserver": "^2.0.4",
     "fr-tabs": "^1.0.5",
     "highlight.js": "^9.5.0",
+    "query-string": "^4.2.3",
     "ress": "^1.1.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
     "socialshares": "^2.0.2"

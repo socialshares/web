@@ -5,8 +5,8 @@ import FontFaceObserver from 'fontfaceobserver'
 import smoothScroll from 'smooth-scroll'
 import Frtabs from 'fr-tabs'
 import './icons'
+import '../index.ejs'
 import '../css/index.css'
-import '../index.html'
 
 const font = new FontFaceObserver('Catamaran')
 

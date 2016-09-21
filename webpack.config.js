@@ -8,6 +8,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const cssnext = require('postcss-cssnext')
 const postcssImport = require('postcss-import')
+const postcssEach = require('postcss-each')
 
 const __DEV__ = process.env.NODE_ENV !== 'production'
 const __PROD__ = process.env.NODE_ENV === 'production'
@@ -15,6 +16,7 @@ const __PROD__ = process.env.NODE_ENV === 'production'
 var config = {
   entry: {
     'index': ['./src/js/index.js'],
+    'share': ['./src/js/share.js'],
   },
   output: {
     path: './dist',
@@ -22,9 +24,22 @@ var config = {
   },
   plugins: [
     new HtmlPlugin({
-      template: './src/index.html',
+      template: './src/index.ejs',
       filename: 'index.html',
-      inject: 'head',
+      inject: false,
+      minify: {
+        collapseBooleanAttributes: true,
+        collapseWhitespace: true,
+        removeAttributeQuotes: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+      },
+    }),
+    new HtmlPlugin({
+      template: './src/share.ejs',
+      filename: 'share.html',
+      inject: false,
       minify: {
         collapseBooleanAttributes: true,
         collapseWhitespace: true,
@@ -48,6 +63,7 @@ var config = {
       {
         test: /\.jsx?$/,
         loaders: ['babel'],
+        exclude: [/.ejs$/],
       },
       {
         test: /\.svg$/,
@@ -57,14 +73,15 @@ var config = {
         }),
       },
       {
-        test: /\.html$/,
-        loader: 'raw',
+        test: /\.ejs$/,
+        loader: 'ejs',
       },
     ],
   },
   postcss: webpack => {
     return [
       postcssImport({ addDependencyTo: webpack }),
+      postcssEach,
       cssnext,
     ]
   },
@@ -96,7 +113,8 @@ if (__PROD__) {
   )
   config.plugins.push(
     new InjectWebpackPlugin({
-      './src/index.html': './src/blank.html',
+      './src/index.ejs': './src/blank.html',
+      './src/share.ejs': './src/blank.html',
     })
   )
   config.module.loaders.push({
