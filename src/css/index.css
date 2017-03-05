@@ -123,6 +123,17 @@ a {
     line-height: 1.5;
   }
 
+  & ul:not(.fr-tabs__tablist) {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  & li:not(.fr-tabs__tablist-item) {
+    margin-bottom: 0.5rem;
+  }
+
   & pre {
     line-height: 1.5;
   }
