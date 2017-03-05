@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>socialshares</title>
+  <title>socialshares - Responsive, secure, and fast share buttons.</title>
 
   <meta name="application-name" content="socialshares" />
   <meta name="apple-mobile-web-app-title" content="socialshares" />
@@ -494,7 +494,7 @@ socialshares.unmount('.your-custom-selector')</code></pre>
 
     <section id="optimization" class="docgroup">
       <h2>Optimization</h2>
-      <p>You can gain a slight performance boost by only including the icons that you use. You will want to do this in a <a href="http://webpack.github.io/">Webpack</a> or <a href="http://browserify.org/">Browserify</a> environment after <a href="#installation" data-scroll>installing via npm</a>.</p>
+      <p>You can gain a slight performance boost by only including the icons that you use. You will want to do this in a <a href="https://webpack.js.org/">Webpack</a> or <a href="http://browserify.org/">Browserify</a> environment after <a href="#installation" data-scroll>installing via npm or Yarn</a>.</p>
       <div class="fr-tabs js-fr-tabs has-spacing">
         <ul class="fr-tabs__tablist js-fr-tabs__tablist">
           <li class="fr-tabs__tablist-item">
@@ -539,12 +539,12 @@ socialshares.configure({
 socialshares.mount() // render with new config</code></pre>
         </section>
       </div>
-      <p>If you're using Webpack 2 or <a href="http://rollupjs.org/">Rollup</a>, you can take advantage of tree-shaking.</p>
+      <p>You can take advantage of tree-shaking in <a href="https://webpack.js.org/guides/tree-shaking/">Webpack 2</a> or <a href="http://rollupjs.org/">Rollup</a>.</p>
       <pre class="bordered has-spacing"><code class="javascript">import socialshares from 'socialshares/dist/socialshares.noicons'
-import {twitter, facebook} from 'socialshares/dist/icons'
+import { twitter, facebook } from 'socialshares/dist/icons'
 
 socialshares.configure({
-  icons: {twitter, facebook}
+  icons: { twitter, facebook }
 })
 
 socialshares.mount()</code></pre>
