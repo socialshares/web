@@ -163,6 +163,7 @@
     <section id="usage" class="docgroup">
       <h2>Usage</h2>
       <p>The following markup displays all available buttons.</p>
+      <p><strong>Note</strong>: It's a good idea to show a maximum of 6 buttons. <a href="#faq-responsive" data-scroll>Read why in the FAQ</a>.</p>
       <div class="fr-tabs js-fr-tabs has-spacing">
         <ul class="fr-tabs__tablist js-fr-tabs__tablist">
           <li class="fr-tabs__tablist-item">
@@ -609,11 +610,13 @@ socialshares.mount()</code></pre>
     <section id="faq" class="docgroup">
       <h2>FAQ</h2>
       <p>You probably have some questions about this project, here are a few common ones.</p>
-      <h3>How does socialshares help with performance and privacy?</h3>
-      <p>Embedding third-party scripts from Twitter, Facebook, and other social media means that your site will have to make multiple HTTP requests to external domains, which is bad for performance. You are also giving away your visitors' browsing data by having these scripts on your site. With socialshares, you load custom buttons from your own site, which means you get full control over performance and privacy. You also get responsive and consistent-looking buttons with little effort.</p>
-      <h3>Why is the CSS and SVG included with the JavaScript?</h3>
+      <h3 id="faq-responsive">Why should I limit how many buttons I display?</h3>
+      <p>While socialshares buttons are responsive and will hide labels when there isn't enough space, they currently are unable to stack on top of each other. This is because of how available space is detected to hide labels on small screens. Hopefully this will be solved in the future, but for now just display 6 buttons or less, and make sure to test on small screens.</p>
+      <h3 id="faq-bundle">Why is the CSS and SVG included with the JavaScript?</h3>
       <p>It was decided that v2 would be easier to setup, and keeping everything contained in a single JS file is the simplest solution. We also went with SVG over font icons for the same reason. This does mean that the buttons will not show for JS-disabled users, but sharing is typically not a core feature and you can provide a fallback with the <code>&lt;noscript></code> tag if needed.</p>
-      <h3>Where can I find previous versions?</h3>
+      <h3 id="faq-perf">How does socialshares help with performance and privacy?</h3>
+      <p>Embedding third-party scripts from Twitter, Facebook, and other social media means that your site will have to make multiple HTTP requests to external domains, which is bad for performance. You are also giving away your visitors' browsing data by having these scripts on your site. With socialshares, you load custom buttons from your own site, which means you get full control over performance and privacy. You also get responsive and consistent-looking buttons with little effort. <a href="https://sunnysingh.io/blog/share-buttons">Read more on Sunny Singh's blog</a> (note that the article was written before socialshares).</p>
+      <h3 id="faq-previous">Where can I find previous versions?</h3>
       <p>Version 1 is no longer maintained but the site can be found at <a href="https://v1.socialshar.es/">v1.socialshar.es</a> and at the <a href="https://github.com/socialshares/buttons/tree/v1.0.5">v1.0.5 tag</a> on the repo.</p>
     </section>
   </main>
