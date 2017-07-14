@@ -55,6 +55,6 @@
     "query-string": "^4.2.3",
     "ress": "^1.1.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll",
-    "socialshares": "^2.0.2"
+    "socialshares": "^2.0.5"
   }
 }

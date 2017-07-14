@@ -4361,7 +4361,7 @@ request@2.40.0:
     tough-cookie ">=0.12.0"
     tunnel-agent "~0.4.0"
 
-request@2.78.0, request@^2.58.0, request@^2.67.0, request@^2.74.0:
+request@2.78.0, request@^2.67.0:
   version "2.78.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.78.0.tgz#e1c8dec346e1c81923b24acdb337f11decabe9cc"
   dependencies:
@@ -4386,7 +4386,7 @@ request@2.78.0, request@^2.58.0, request@^2.67.0, request@^2.74.0:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
 
-request@^2.79.0:
+request@^2.58.0, request@^2.74.0, request@^2.79.0:
   version "2.80.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.80.0.tgz#8cc162d76d79381cdefdd3505d76b80b60589bd0"
   dependencies:
@@ -4646,9 +4646,9 @@ sntp@1.x.x:
   dependencies:
     hoek "2.x.x"
 
-socialshares@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/socialshares/-/socialshares-2.0.3.tgz#48d4f98140060ad4a03b08c6db67145d4a38b24e"
+socialshares@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/socialshares/-/socialshares-2.0.5.tgz#3ab24d0b40676be0a0ae022b5530e837f4b6eb66"
   dependencies:
     babel-runtime "^6.11.6"
     domready "^1.0.8"
